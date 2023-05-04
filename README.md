@@ -1,2 +1,2 @@
-# Personal_Projects
+# Projects
 Notable projects I've worked on 
