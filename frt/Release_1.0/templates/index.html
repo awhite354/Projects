@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+	<script>
+		var params = {{ params| tojson | safe }};
+	</script>
+	<script src="https://unpkg.com/tone"></script>
+	<link rel="stylesheet" href="{{ url_for('static',filename='piano.css') }}" />
+	<link rel="stylesheet" href="{{ url_for('static',filename='index.css') }}" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="loader-wrapper" id="lwrap">
+		<span class="loader"><span class="loader-inner"></span></span>
+	</div>
+	<div class="logo">
+		<img src="{{url_for('static', filename='logo-no-background.png')}}" alt="specto1" />
+	</div>
+	<div class="navbar">
+		<a href="./">Home</a>
+		<a href="{{url_for('static',filename='contributors.html') }}">Contributors</a>
+		<a href="{{url_for('static',filename='resources.html') }}">Resources</a>
+	</div>
+	<div class="main">
+		<form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
+			<div class="row">
+				<div class="webBox">
+					<div class="directions">
+						<p>
+							Welcome to the FM Resynthesis Tool <br><br>
+							Start by uploading your own sound file using the upload button to the left <br>
+							(We allow mono 24bit .wav files with a 48kHz sample rate) <br>
+							Next, wait for the sound to be processes <br>
+							Finally use the mouse, or computer keyboard to play your resynthesized sound!!
+						</p>
+					</div>
+				</div>
+				<div class="webBox">
+					<div class="fileSub" id="fsub">
+						<input type="file" name="file" id="upload" />
+						<input type="submit" id="suButton" />
+						<button type="button" id="playSound">Play Uploaded</button>
+						<script>
+							function handleFiles(event) {
+								var files = event.target.files;
+								$("#src").attr("src", URL.createObjectURL(files[0]));
+								document.getElementById("audio").load();
+							}
+
+							$(document).ready(function () {
+								var audioElement = document.createElement('audio');
+								audioElement.setAttribute('src', 'static/mp3files/file_0.mp3');
+								$("#playSound").click(function () {
+									audioElement.play()
+								});
+							});
+						</script>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="webBoximg">
+					<div class="oldImg">
+						<img src="{{url_for('static', filename='target.png')}}" alt="specto1" />
+					</div>
+				</div>
+				<div class="webBoximg">
+					<div class="newImg">
+						<img src="{{url_for('static', filename='resynth.png')}}" alt="specto2" />
+					</div>
+				</div>
+			</div>
+			<div id="piano">
+				<div data-note="C0" id="a" class="white-key">A</div>
+				<div data-note="C#0" id="w" class="black-key">W</div>
+				<div data-note="D0" id="s" class="white-key a">S</div>
+				<div data-note="D#0" id="e" class="black-key">E</div>
+				<div data-note="E0" id="d" class="white-key a">D</div>
+				<div data-note="F0" id="f" class="white-key">F</div>
+				<div data-note="F#0" id="t" class="black-key">T</div>
+				<div data-note="G0" id="g" class="white-key a">G</div>
+				<div data-note="G#0" id="y" class="black-key">Y</div>
+				<div data-note="A0" id="h" class="white-key a">H</div>
+				<div data-note="A#0" id="u" class="black-key">U</div>
+				<div data-note="B0" id="j" class="white-key a">J</div>
+				<div data-note="C1" id="k" class="white-key">K</div>
+				<div data-note="C#1" id="o" class="black-key">O</div>
+				<div data-note="D1" id="l" class="white-key a">L</div>
+				<div data-note="D#1" id="p" class="black-key">P</div>
+				<div data-note="E1" id=";" class="white-key a">;</div>
+				<div data-note="F1" id="'" class="white-key">'</div>
+				<div id="z" class="oct-key">Z</div>
+				<div id="oct-minus">-</div>
+				<div id="x" class="oct-key">X</div>
+				<div id="oct-plus">+</div>
+				<div id="octave_div">Octave: <span id="dis-user-oct"></span></div>
+			</div>
+	</div>
+	<script>
+		$(".loader-wrapper").hide();
+		$(document).ready(function () {
+			$("#suButton").click(function () {
+				$(".loader-wrapper").show();
+			});
+		});
+	</script>
+</body>
+<script src="{{ url_for('static',filename='pianoSynth.js') }}"></script>
+
+</html>
