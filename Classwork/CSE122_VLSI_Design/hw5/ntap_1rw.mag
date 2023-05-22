@@ -1,0 +1,34 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1647376485
+<< nwell >>
+rect 434 303 614 650
+<< nsubdiff >>
+rect 507 481 541 514
+rect 507 423 541 447
+<< nsubdiffcont >>
+rect 507 447 541 481
+<< locali >>
+rect 478 595 570 606
+rect 478 561 507 595
+rect 541 561 570 595
+rect 478 550 570 561
+rect 495 481 553 550
+rect 495 447 507 481
+rect 541 447 553 481
+rect 495 429 553 447
+<< viali >>
+rect 507 561 541 595
+<< metal1 >>
+rect 478 595 570 606
+rect 478 561 507 595
+rect 541 561 570 595
+rect 478 530 570 561
+<< labels >>
+flabel metal1 s 504 569 547 589 0 FreeSans 200 0 0 0 VPWR
+port 4 nsew power bidirectional abutment
+rlabel nsubdiffcont 515 448 530 479 1 VPB
+<< properties >>
+string FIXED_BBOX 478 -102 570 579
+<< end >>

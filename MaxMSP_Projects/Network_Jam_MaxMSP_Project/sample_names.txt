@@ -1,0 +1,12 @@
+1, "003_Drumstick_-_HOS_Zenhiser.wav";
+2, "ABLoFi_Toby_Schay_rim_7.wav";
+3, "JVIEWS_hollow_tree_snare_04.wav";
+4, "JVIEWS_snare_helper_wood_click.wav";
+5, "JVIEWS_snare_percussion_01.wav";
+6, "LBN_hihat_ocean.wav";
+7, "LBN_hihat_resonant.wav";
+8, "LBN_snare_bonnet.wav";
+9, "lh2_hat_one_shot_stndrd3.wav";
+10, "lh2_kick_one_shot_blt.wav";
+11, "lh2_kick_one_shot_rain.wav";
+12, "OS_FSH_Clap_Snare.wav";

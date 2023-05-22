@@ -1,0 +1,4 @@
+CSE_122 Winter22 HW#3 Anthony White
+
+The area result for my bounding box which includes all cells used in my design is 46.8 microns^2.
+

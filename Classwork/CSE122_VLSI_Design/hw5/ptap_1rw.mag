@@ -1,0 +1,34 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1647384894
+<< pwell >>
+rect 115 -109 207 0
+<< psubdiff >>
+rect 144 -36 178 -12
+rect 144 -96 178 -70
+<< psubdiffcont >>
+rect 144 -70 178 -36
+<< locali >>
+rect 132 31 144 65
+rect 178 31 190 65
+rect 132 -36 190 31
+rect 132 -70 144 -36
+rect 178 -70 190 -36
+rect 132 -86 190 -70
+<< viali >>
+rect 144 31 178 65
+<< metal1 >>
+rect 115 65 207 78
+rect 115 31 144 65
+rect 178 31 207 65
+rect 115 18 207 31
+<< metal2 >>
+rect 115 29 207 95
+<< labels >>
+flabel locali s 153 -49 169 -30 0 FreeSans 250 0 0 0 VNB
+port 2 nsew ground bidirectional
+rlabel comment s 188 100 188 100 4 tap_1
+<< properties >>
+string FIXED_BBOX 115 -102 207 579
+<< end >>

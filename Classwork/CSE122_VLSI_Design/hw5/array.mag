@@ -1,0 +1,101 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1647387863
+<< metal1 >>
+rect 1272 633 1364 709
+rect 1244 112 1364 172
+rect 1271 -729 1363 -653
+rect 1263 -1198 1345 -1192
+rect 1263 -1242 1349 -1198
+rect 1263 -1249 1345 -1242
+rect 87 -1335 143 -1269
+rect 281 -1275 337 -1269
+rect 281 -1330 338 -1275
+rect 281 -1335 337 -1330
+rect 517 -1331 564 -1273
+rect 710 -1332 755 -1277
+rect 942 -1328 987 -1273
+rect 1134 -1330 1179 -1275
+<< metal2 >>
+rect 179 123 245 189
+rect 179 -189 245 -123
+rect 179 -1239 245 -1173
+use cell_1rw  cell_1rw_3
+timestamp 1647387863
+transform 1 0 60 0 -1 -623
+box -100 -630 400 130
+use cell_1rw  cell_1rw_4
+timestamp 1647387863
+transform 1 0 484 0 -1 -623
+box -100 -630 400 130
+use cell_1rw  cell_1rw_6
+timestamp 1647387863
+transform 1 0 60 0 1 -739
+box -100 -630 400 130
+use cell_1rw  cell_1rw_7
+timestamp 1647387863
+transform 1 0 484 0 1 -739
+box -100 -630 400 130
+use cell_1rw  cell_1rw_5
+timestamp 1647387863
+transform 1 0 908 0 -1 -623
+box -100 -630 400 130
+use cell_1rw  cell_1rw_8
+timestamp 1647387863
+transform 1 0 908 0 1 -739
+box -100 -630 400 130
+use ptap_1rw  ptap_1rw_1
+timestamp 1647384894
+transform 1 0 1157 0 1 -1268
+box 115 -109 207 100
+use ntap_1rw  ntap_1rw_1
+timestamp 1647376485
+transform 1 0 793 0 1 -1259
+box 434 303 614 650
+use cell_1rw  cell_1rw_0
+timestamp 1647387863
+transform 1 0 60 0 1 623
+box -100 -630 400 130
+use cell_1rw  cell_1rw_1
+timestamp 1647387863
+transform 1 0 484 0 1 623
+box -100 -630 400 130
+use cell_1rw  cell_1rw_2
+timestamp 1647387863
+transform 1 0 908 0 1 623
+box -100 -630 400 130
+use ptap_1rw  ptap_1rw_0
+timestamp 1647384894
+transform 1 0 1157 0 1 94
+box 115 -109 207 100
+use ntap_1rw  ntap_1rw_0
+timestamp 1647376485
+transform 1 0 794 0 1 103
+box 434 303 614 650
+<< labels >>
+rlabel metal1 517 -1331 564 -1273 1 BL2
+port 8 n
+rlabel metal1 710 -1332 755 -1277 1 BR2
+port 9 n
+rlabel metal1 942 -1328 987 -1273 1 BL3
+port 10 n
+rlabel metal1 1134 -1330 1179 -1275 1 BR3
+port 11 n
+rlabel metal2 179 -1239 245 -1173 1 WL3
+port 5 n
+rlabel metal2 179 -189 245 -123 1 WL2
+port 4 n
+rlabel metal2 179 123 245 189 1 WL1
+port 3 n
+rlabel metal1 1289 -1242 1349 -1198 1 gnd
+rlabel metal1 1271 -729 1363 -653 1 vdd
+rlabel metal1 1244 112 1364 172 1 gnd
+port 2 n
+rlabel metal1 1272 633 1364 709 1 vdd
+port 1 n
+rlabel metal1 87 -1335 143 -1269 1 BL1
+port 6 n
+rlabel metal1 281 -1335 337 -1269 1 BR1
+port 7 n
+<< end >>
