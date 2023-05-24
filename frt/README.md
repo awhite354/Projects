@@ -29,6 +29,8 @@ Check out this video to see an improved demo:
 
 https://www.youtube.com/watch?v=q3qd7pU5i7Q  
 
+Or see the video in the repo titled: CSE_115A_Demo.mp4"
+
 ## Contributors
 
 #### Anthony White
