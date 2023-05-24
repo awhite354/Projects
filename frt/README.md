@@ -31,16 +31,17 @@ https://www.youtube.com/watch?v=q3qd7pU5i7Q
 
 ## Contributors
 
+#### Anthony White
+Sprint 1 Scrum Master and Front-End Developer
+#### Gary Finco
+Sprint 2 Scrum Master and Front-End Developer
 #### Dylan Sutro
 Product Owner and Back-End Developer
 #### Radhika Gadre
 Sprint 4 Scrum Master and Back-End Developer
 #### Deva Empranthiri
 Sprint 3 Scrum Master and Full Stack Developer
-#### Gary Finco
-Sprint 2 Scrum Master and Front-End Developer
-#### Anthony White
-Sprint 1 Scrum Master and Front-End Developer
+
 
 ## Resources
 
